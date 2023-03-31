@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<!-- 轮播图海报 -->
+<view class="haibao">
+  <swiper indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}">
+    <block wx:for="{{swiper.background}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">
+          <image src="{{swiper.imgPath[index]}}" alt="" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="category-header">
+    <view class="right-text">
+      热门推荐
+    </view>
+    <view class="more">
+      查看更多 >
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="items">
+    <block wx:for="{{recommandData}}" wx:key="id">
+      <view class="item" >
+        <view class="pic">
+            <image src="{{item.imgPath}}" alt=""/>
+        </view>
+        <view class="name">
+          {{item.name}}
+        </view>
+        <view class="price">
+          {{item.price}}
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="category-header">
+    <view class="right-text">
+      秒杀专区
+    </view>
+    <view class="more">
+      查看更多 >
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="items">
+    <block wx:for="{{skillData}}" wx:key="id">
+      <view class="item" >
+        <view class="pic">
+            <image src="{{item.imgPath}}" alt=""/>
+        </view>
+        <view class="name">
+          {{item.name}}
+        </view>
+        <view class="price">
+          {{item.price}}
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

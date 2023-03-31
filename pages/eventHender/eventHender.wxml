@@ -1,0 +1,25 @@
+<!--pages/eventHender/eventHender.wxml-->
+<!-- <view class="app">
+  <text style="align-items: center; display: flex; justify-content: center; font-size: 30px;">{{num}}</text>
+<button type="primary" bindtap="clickButton">点我+1</button>
+<view id="tapTest" data-hi="Weixin" bindtap="tapName" hover-class="redHover" hover-stop-propagation="true"> Click me! </view>
+</view>
+<view id="outer" bindtap="handleTap1" >
+  outer view
+  <view id="middle" catchtap="handleTap2" hover-class="redHover" hover-start-time=0 hover-stay-time=0>
+    middle view
+    <view id="inner" bindtap="handleTap3" hover-class="redHover" hover-stop-propagation="true">
+      inner view
+    </view>
+  </view>
+  <button type="warn" bindtap="gotoIndex">点我跳转到首页</button>
+</view> -->
+<scroll-view 	scroll-y="{{true}}" class="scroll-view" style="height: 110px; width: 100vh; background-color: brown;">
+  <view style="background-color: aqua;width: 50px;height: 50px;"> </view>
+  <view style="background-color: red;width: 50px;height: 50px;"> </view>
+  <view style="background-color: black;width: 50px;height: 50px;"> </view>
+  <view style="background-color: aqua;width: 50px;height: 50px;"> </view>
+  <view style="background-color: red;width: 50px;height: 50px;"> </view>
+  <view style="background-color: black;width: 50px;height: 50px;"> </view>
+</scroll-view>
+

@@ -1,0 +1,19 @@
+<template name="goodInfo">
+  <view class="item" bindtap="seeDetail" id="0">
+    <view>
+      <image src="{{img}}" style="width: 75px;height: 58px;"></image>
+    </view>
+    <view class="desc">
+      <view class="name">
+        <view class="title">{{title}}</view>
+        <view class="price">￥{{price}}</view>
+      </view>
+      <view class="count">
+        <view class="concern">{{concern}}人关注</view>
+        <view class="type">{{type}}</view>
+        <view class="soldNum">已售：{{soldNum}}</view>
+
+      </view>
+    </view>
+  </view>
+</template>

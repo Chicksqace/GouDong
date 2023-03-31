@@ -1,0 +1,8 @@
+/* pages/cart/cart.wxss */
+
+.big-box {
+  display: flex;
+  font-size: 8px;
+}
+
+

@@ -1,0 +1,47 @@
+<!--pages/find/find.wxml-->
+<import src="/templates/goodInfo/goodInfo.wxml" />
+<view class="activity-container">
+  <view style="color: white;font-size: 40rpx;padding: 30rpx;">劲爆折扣</view>
+  <view style="width: 100%;display: flex;">
+    <block wx:for="{{hotSaleProduct}}">
+      <view class="discountSubContainer">
+        <image src="{{item.pic}}" style="height: 150rpx;width: 150rpx;background: yellow;display: inline-block;border-radius: 10rpx;" bindtap="discountClick" data-index="{{index}}">
+        </image>
+        <view style="display: flex;justify-content: center;margin-bottom: 20rpx; ">
+          <view style="color: red;font-size: 20rpx;margin-right: 5rpx;">￥{{item.price}}</view>
+          <view style="color: gray;font-size: 20rpx;text-decoration: line-through;">￥{{item.oriPrice}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="hr"></view>
+<view class="head">
+  <view>精选</view>
+  <view class="right">></view>
+</view>
+<view class="line"></view>
+<view class="list">
+  <block wx:for="{{productList}}" wx:key="id">
+  <!-- <view class="item" bindtap="seeDetail" id="0">
+      <view>
+        <image src="{{item.img}}" style="width: 75px;height: 58px;"></image>
+      </view>
+      <view class="desc">
+      <view class="name">
+        <view class="title">{{item.title}}</view>
+        <view class="price">￥{{item.price}}</view>
+        </view>
+        <view class="count">
+          <view class="type">{{item.type}}</view>
+          <view class="soldNum">已售：{{item.soldNum}}</view>
+          <view class="concern">{{item.concern}}人关注</view>
+        </view>
+        
+      </view>
+    </view> -->
+    <template is="goodInfo" data="{{...item}}" />
+    <view class="line"></view>
+  </block>
+</view>
+

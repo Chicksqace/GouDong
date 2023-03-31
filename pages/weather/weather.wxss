@@ -1,0 +1,82 @@
+/* pages/weather/weather.wxss */
+page {
+  background-color: #001f3e;
+  color: white;
+}
+
+.content {
+  font-family: 微软雅黑, 宋体;
+  font-size: 14px;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: #333333;
+}
+
+.today {
+  padding-top: 70rpx;
+  height: 50%;
+}
+
+.temp {
+  font-size: 80px;
+  text-align: center;
+}
+
+.city {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+}
+
+.lowhigh {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.type {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.week {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.weather {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.viewLine {
+  width: 100%;
+  height: 1rpx;
+  background-color: #8b9da9;
+  margin-top: 30rpx;
+}
+
+.otherWeather {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  padding-top: 20rpx;
+}
+
+.infoOther {
+  text-align: center;
+}
+
+.infoOther view,.tip {
+  padding: 10rpx;
+  color: #c1cad4;
+  font-size: 12px;
+}
+.tip {
+  margin-top: 30rpx;
+}

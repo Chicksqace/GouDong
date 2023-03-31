@@ -1,0 +1,54 @@
+.line {
+  height: 3px;
+  background-color: #cccccc;
+  margin-top: 4.7vw;
+  opacity: 0.5;
+}
+
+.head {
+  display: flex;
+  margin: 3.2vw;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #660000;
+}
+
+.head .right {
+  position: absolute;
+  right: 3.2vw;
+}
+
+.item {
+  display: flex;
+  margin-left: 3.7vw;
+  margin-bottom: 4.7vw;
+}
+
+.desc {
+  display: flex;
+  margin-left: 6.25vw;
+  line-height: 9.4vw;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.price {
+  color: rgb(172, 1, 15);
+  font-weight: bold;
+}
+
+.count {
+  display: flex;
+  font-size:3.75vw;
+  color: #eb7272;
+  width: 64vw;
+  justify-content: space-between;
+}

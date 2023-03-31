@@ -1,0 +1,15 @@
+<!--pages/cart/cart.wxml-->
+<!-- <view wx:if="{{score>= 60}}">及格</view> -->
+
+<!-- <view wx:for="{{arr}}" wx:for-item="i"  class="big-box">
+  <view wx:for="{{arr2}}" wx:for-item="j" class="box">
+    <view wx:if="{{j<=i}}" class="item">
+      {{i}}*{{j}} = {{i*j}}  
+    </view>
+  </view>
+</view> -->
+<view wx:for="{{setInfo}}" wx:key="*this">
+  <switch checked="" bindchange="" />
+  {{item}}
+</view>
+<button bindtap="addSwitch">新增开关设置</button>

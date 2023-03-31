@@ -1,0 +1,83 @@
+/**index.wxss**/
+page {
+  background-color: rgb(240, 239, 239);
+}
+
+swiper {
+  width: 100%;
+  height: 350rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 350rpx;
+}
+
+.line {
+  background: rgba(255, 0, 0, .1);
+  width: 100%;
+  height: 3rpx;
+}
+
+.category-header {
+  display: flex;
+  height: 100rpx;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-top: 30rpx;
+}
+
+.category-header .right-text {
+  font-weight: 700;
+  color: red;
+  padding-left: 25rpx;
+}
+
+.category-header .more {
+  color: gray;
+  font-size: 30rpx;
+  padding-right: 10px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 25rpx;
+}
+
+.item {
+  width: 30%;
+  height: 425rpx;
+  font-size: 30rpx;
+  border: 1rpx solid red;
+  overflow: hidden;
+  border-radius: 5%;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.pic {
+  display: flex;
+  width: 220rpx;
+  height: 280rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic image {
+  width: 210rpx;
+  height: 250rpx;
+  max-width: 100%;
+}
+
+.name {
+  font-size: 25rpx;
+}
+
+.price {
+  margin-top: 10rpx;
+  color: red;
+  font-size: 35rpx;
+}

@@ -1,0 +1,131 @@
+<!--pages/test/test.wxml-->
+<view class="view-Btn">
+  <button type="primary">页面主操作 Normal</button>
+  <button type="primary" loading="true">页面主操作 Loading</button>
+  <button type="primary" disabled="true">页面主操作 Disabled</button>
+  <button type="default">页面次要操作 Normal</button>
+  <button type="default" disabled="true">页面次要操作 Disabled</button>
+  <button type="warn">警告类操作 Normal</button>
+  <button type="warn" disabled="true">警告类操作 Disabled</button>
+  <button type="primary" plain="true">按钮</button>
+  <button type="primary" disabled="true" plain="true">不可点击的按钮</button>
+  <button type="default" plain="true">按钮</button>
+  <button type="default" disabled="true" plain="true">按钮</button>
+  <button class="mini-btn" type="primary" size="mini">按钮</button>
+  <button class="mini-btn" type="default" size="mini">按钮</button>
+  <button class="mini-btn" type="warn" size="mini">按钮</button>
+</view>
+<view class="viewIpt">
+  <view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">可以自动聚焦的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="将会获取焦点"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">控制最大输入长度的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" maxlength="10" placeholder="最大输入长度为10" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">实时获取输入值：{{inputValue}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" bindinput="bindKeyInput" placeholder="输入同步到view中"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">控制输入的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  bindinput="bindReplaceInput" placeholder="连续的两个1会变成2" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">控制键盘的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  bindinput="bindHideKeyboard" placeholder="输入123自动收起键盘" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">数字输入的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="number" placeholder="这是一个数字输入框" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">密码输入的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" password type="text" placeholder="这是一个密码输入框" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">带小数点的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="digit" placeholder="带小数点的数字键盘"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">身份证输入的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="idcard" placeholder="身份证输入键盘" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">控制占位符颜色的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder-style="color:#F76260" placeholder="占位符字体是红色的" />
+      </view>
+    </view>
+  </view>
+</view>
+</view>
+<view class="viewCheck">
+  <view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">默认样式</view>
+      <label class="checkbox">
+        <checkbox value="cb" checked="true"/>选中
+      </label>
+      <label class="checkbox">
+        <checkbox value="cb" />未选中
+      </label>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">推荐展示样式</view>
+      <view class="weui-cells weui-cells_after-title">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+            <view class="weui-cell__hd">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+  
+</view>
+</view>
+

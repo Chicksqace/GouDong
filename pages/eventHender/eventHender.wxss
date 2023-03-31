@@ -1,0 +1,6 @@
+/* pages/eventHender/eventHender.wxss */
+.redHover{
+  /* background-color: red !important; */
+  color: red !important;
+  border: 1px solid red;
+}

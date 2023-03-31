@@ -1,0 +1,24 @@
+<form bindsubmit="register">
+  <view class="account">
+    <text class="title">账号:</text>
+    <input class="info" placeholder="请输入用户名/邮箱/手机号" placeholder-style="color:#ccc" bindinput="accountInput"/>
+  </view>
+  <view class="hr"></view>
+  <!-- 密码 -->
+  <view class="account">
+    <text class="title">密码:</text>
+    <input class="info" placeholder="请输入密码" placeholder-style="color:#ccc" 
+    bindblur="pwdInput"/>
+  </view>
+  <view class="account">
+    <text class="title">确定密码:</text>
+    <input class="info" placeholder="请再次输入密码" placeholder-style="color:#ccc" bindblur="pwdInput"/>
+  </view>
+  <!-- 老师写了一个bug,通过写死方式验证密码应该需要俩个数据来接收，否则无法判断。当密码与确定密码不同时也会跳转
+  修改方式：1.通过本地存储
+  2.俩个数据来接收判断一下即可
+  3.监听器通过oldValue和newValue可以实现
+  注：通过云服务器，没有问题 （我遗留下这个bug）
+  -->
+  <button type="mytype" form-type="submit">注册</button>
+</form>

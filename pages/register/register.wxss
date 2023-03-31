@@ -1,0 +1,68 @@
+/* pages/register/register.wxss */
+.loginTitle{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.select{
+  font-size:14px;
+  color: rgb(54, 240, 8);
+  width: 50%;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  border-bottom:5rpx solid rgb(55, 224, 13);  
+}
+.default{
+  font-size:12px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.hr{
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+}
+
+.account{
+  display: flex;
+  padding: 10px 20px;
+  width: 90%;
+  align-items: center;
+}
+.account .title{
+  font-size: 14px;
+  font-weight: bold;
+  counter-reset: #444444;
+}
+.see{
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.account .info{
+  margin-left: 10px;
+}
+button[size=my]{
+  font-size: 10px;
+  font-weight: normal;
+  width: 80px;
+  height: 40px;
+  line-height: 24px;
+  padding: 8px 10px;
+  flex: 0 0 80px;
+  color: #fff;
+  background-color: #e1251b;
+}
+button[type=mytype]{
+  font-size: 20px;
+  font-weight: bold;
+  width: 80px;
+  height: 40px;
+  line-height: 24px;
+  padding: 8px 10px;
+  flex: 0 0 80px;
+  color: #fff;
+  background-color: #e1251b;
+}
+
