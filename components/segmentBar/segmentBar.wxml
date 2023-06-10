@@ -1,0 +1,13 @@
+<!--components/segmentBar/segmentBar.wxml-->
+<view class="seg">
+  <block wx:for="{{segmentItems}}" wx:key="index">
+    <view id="{{index}}" class="segItem {{currentTab==index? 'selected' : ''}}" bindtap="onTap">
+      <view class="title">
+        {{item.title}}
+      </view>
+      <view class="title">
+        {{item.subtitle}}
+      </view>
+    </view>
+  </block>
+</view>

@@ -2,6 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
+    "pages/goods/goods",
+    "pages/search/search",
+    "pages/goodsDetail/goodsDetail",
     "pages/category/category",
     "pages/cart/cart",
     "pages/mine/mine",
@@ -10,7 +13,14 @@
     "pages/swiperDome/swiperDome",
     "pages/eventHender/eventHender",
     "pages/test/test",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/camera/camera",
+    "pages/adv/adv",
+    "pages/downLoad/downLoad",
+    "pages/fileTest/fileTest",
+    "pages/map/map",
+    "pages/cartTest/cartTest",
+    "pages/dbDemo/dbDemo"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -49,5 +59,10 @@
         "selectedIconPath": "images/mine_selected.png"
       }
     ]
+  },
+  "permission":{
+    "scope.userLocation":{
+      "desc":"小程序将使用定位功能"
+    }
   }
 }

@@ -7,7 +7,7 @@ App({
     wx.setStorageSync('logs', logs),
     wx.cloud.init({
       // 环境的id
-      env:"cloud1-2goo7dbp173e368b",
+      env:"cpy-9gfilqldc654ffcd",
       // 不跟踪用户
       traceUser:true
     })
