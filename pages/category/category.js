@@ -5,12 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    segmentItems:[
+      {
+        title:"一",
+        subtitle:"1"
+      },
+      {
+        title:"二",
+        subtitle:"2"
+      },
+      {
+        title:"三",
+        subtitle:"3"
+      },
+      {
+        title:"四",
+        subtitle:"4"
+      }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  chane(e){
+    console.log(e);
+  },
   onLoad(options) {
 
   },

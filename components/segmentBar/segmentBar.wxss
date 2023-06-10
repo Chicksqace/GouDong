@@ -1,0 +1,27 @@
+/* components/segmentBar/segmegtBar.wxss */
+.seg{
+  height: 100rpx;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.segItem{
+  flex: 1;  
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.segItem .title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.segItem .subTitle{
+  font-size: 12px;
+}
+
+.selected .title{
+  color: rgb(136, 8, 8)
+}
+.selected .subTitle{
+  color: red
+}

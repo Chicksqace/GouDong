@@ -1,2 +1,4 @@
 <!--pages/category.wxml-->
-<text>pages/category.wxml</text>
+<view>
+  <segmentBar segmentItems="{{segmentItems}}" bindchangeTab="change"/>
+</view>

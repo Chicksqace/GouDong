@@ -3,7 +3,7 @@
 <view class="activity-container">
   <view style="color: white;font-size: 40rpx;padding: 30rpx;">劲爆折扣</view>
   <view style="width: 100%;display: flex;">
-    <block wx:for="{{hotSaleProduct}}">
+    <block wx:for="{{hotSaleProduct}}" wx:key="*this">
       <view class="discountSubContainer">
         <image src="{{item.pic}}" style="height: 150rpx;width: 150rpx;background: yellow;display: inline-block;border-radius: 10rpx;" bindtap="discountClick" data-index="{{index}}">
         </image>

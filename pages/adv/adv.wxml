@@ -1,0 +1,12 @@
+<!--pages/adv/adv.wxml-->
+<button type="primary" bindtap="getAdv">获取轮播图</button>
+<swiper class="adv" indicator-dots autoplay circular>
+<block wx:for="{{list}}" wx:key="index">
+  <swiper-item>
+    <image src="http://192.168.81.253:10001/{{item.advImg}}" mode=""/>
+    <view class="advTitle">
+      {{item.advTitle}}
+    </view>
+  </swiper-item>
+</block>
+</swiper>
