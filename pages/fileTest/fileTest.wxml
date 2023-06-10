@@ -1,0 +1,6 @@
+<!--pages/fileTest/fileTest.wxml-->
+<button bindtap="SavedFileList">保存文件</button>
+<button bindtap="getSavedFileList">获取本地文件列表</button>
+<button bindtap="getSavedFileInfo">获取本地文件信息</button>
+<button bindtap="deleteSavedFile">删除本地文件</button>
+<button bindtap="open">打开文档</button>

@@ -64,6 +64,12 @@ Page({
       url: '../logs/logs'
     })
   },
+  more(e){
+    var id =e.currentTarget.id
+    wx.navigateTo({
+      url: '/pages/goods/goods?id='+id,
+    })
+  },
   onLoad() {
     if (wx.getUserProfile) {
       this.setData({

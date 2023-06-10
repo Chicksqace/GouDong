@@ -1,27 +1,13 @@
-// pages/test/test.js
+// pages/search/search.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[]
+
   },
- getBooks(){
-   var page=this
-   const requestTask=wx.request({
-    url: 'http://study.smartye.top/20230201/book.json',
-    success(res){
-      console.log(res);
-      page.setData({list:res.data})
-    },
-    fail(err){
-      console.log(err);
-    }
-  })
-  // requestTask.abort()
-  
- },
+
   /**
    * 生命周期函数--监听页面加载
    */

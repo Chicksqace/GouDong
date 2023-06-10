@@ -1,4 +1,4 @@
-// pages/test/test.js
+// pages/adv/adv.js
 Page({
 
   /**
@@ -7,21 +7,22 @@ Page({
   data: {
     list:[]
   },
- getBooks(){
-   var page=this
-   const requestTask=wx.request({
-    url: 'http://study.smartye.top/20230201/book.json',
-    success(res){
-      console.log(res);
-      page.setData({list:res.data})
-    },
-    fail(err){
-      console.log(err);
-    }
-  })
-  // requestTask.abort()
-  
- },
+  getAdv(e){
+    var page=this
+    wx.request({
+      url: 'http://192.168.81.253:10001/prod-api/api/metro/rotation/list',
+      method:"GET",
+      dataType:"json",
+      header:{
+        'content-type':"application/json"
+      },
+      success(res){
+        console.log(res);
+        var list=res.data.rows
+        page.setData({list:list})
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

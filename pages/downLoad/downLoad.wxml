@@ -1,0 +1,4 @@
+<!--pages/downLoad/downLoad.wxml-->
+<button bindtap="downLoad">点我读取图片</button>
+<image src="{{src}}" mode=""/>
+<button bindtap="upload">下载</button>

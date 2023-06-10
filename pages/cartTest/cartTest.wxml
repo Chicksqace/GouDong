@@ -1,0 +1,14 @@
+<!--pages/cartTest/cartTest.wxml-->
+<button type="primary" plain bindtap="getAdd">获取收货地址</button>
+<button type="primary" plain bindtap="getLocation">获取当前地址</button>
+<button type="primary" plain bindtap="chooseLoc">选择地址{{name}}</button>
+<button type="primary" plain bindtap="openLoc">查看位置</button>
+<button bindtap="getCenter">获取中心经纬度</button>
+<view class="title">
+  经度：{{lon}}   
+</view>
+<view class="title">
+  纬度：{{lat}}   
+</view>
+<map longitude="{{lon}}" latitude="{{lat}}"/>
+<button bindtap="moveTo"></button>

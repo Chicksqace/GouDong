@@ -1,0 +1,11 @@
+<input placeholder="输入名字" bindblur="input_name"/>
+<input placeholder="输入年龄" bindblur="input_age"/>
+<button bindtap="addData">添加数据</button>
+<button bindtap="getData">查询数据</button>
+<input placeholder="待删除的数据的id" bindblur="input_dataId"/><button bindtap="delData">删除数据</button>
+<input placeholder="待修改数据的id" bindblur="input_dataId"/><button bindtap="upData">修改数据</button>
+<button bindtap="upload">上传</button>
+<button bindtap="download">下载</button>
+<button bindtap="sort">比较大小</button>
+
+

@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<!-- 搜索框 -->
+<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容"/>
+                </view>
+            </view>
+            <!-- 搜索按钮,调用搜索查询方法 -->
+            <view class="weui-search-bar__cancel-btn" bindtap='方法名a'>搜索</view>
+        </view>
+    </view>
+</view>
+<!-- 视频 -->
+<video src="https://jvod.300hu.com/vod/product/a00f23fd-b363-48f5-9442-9c91a72c61c2/2272328452634a0d940ed53a6acaf897.mp4" id="myVideo" duration="60" controls="true" autoplay loop danmu-btn enable-danmu danmu-list="{{danmuList}}"></video>
+<view class="titleNav">
+    <view class="{{currentTab==0?'select' : 'default'}}"data-current="0"bindtap="switchNav">热门推荐</view>
+    <view class="{{currentTab==1?'select' : 'default'}}"data-current="1" bindtap="switchNav">秒杀专区</view>
+    <view class="{{currentTab==2?'select' : 'default'}}"data-current="2" bindtap="switchNav">畅销榜单</view>
+  </view>
+<view class="hr"></view>
+<!-- 导航对应内容 -->
+<view>
+  <swiper current="{{currentTab}}" style="height: 1000px;">
+    <swiper-item>
+      <view>热门推荐商品列表</view>
+      <text bindtap="seeDetail">查看商品详情</text>
+    </swiper-item>
+    <swiper-item>
+      <text>秒杀专区商品列表</text>
+    </swiper-item>
+    <swiper-item>
+      <view>畅销判单商品列表</view>
+    </swiper-item>
+  </swiper>
+</view>

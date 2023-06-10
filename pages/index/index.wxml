@@ -14,7 +14,7 @@
     <view class="right-text">
       热门推荐
     </view>
-    <view class="more">
+    <view class="more" bindtap="more" id="0">
       查看更多 >
     </view>
   </view>
@@ -39,7 +39,7 @@
     <view class="right-text">
       秒杀专区
     </view>
-    <view class="more">
+    <view class="more" bindtap="more" id="1">
       查看更多 >
     </view>
   </view>
